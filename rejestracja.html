@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WidełkiPRO.com</title>
+    <link rel="stylesheet" href="loginstyle.css">
+</head>
+
+<body>
+    <div id="kwadrat">
+        <div id="napis">
+            <H1 id="logo"><a href="WidełkiPRO.html"><img src="logo.png"></a></H1>
+        </div>
+    <div id="wpisy">
+        <table id="tabela">
+            <tr>
+                <td class="tede">
+                    <form id="forumRejes">
+                        <input type="text" name="login" placeholder="Login" minlength="3" required class="input" id="napisinput"><br><br>
+                        <input type="password" name="haslo" placeholder="Hasło" minlength="3" required class="input" id="napisinput"><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td class="tede">
+                    <input type="submit" value="ZAREJESTRUJ" class="guzik1" id="napisguzik1"
+                        onclick="logowanie()">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td class="tede">
+                    <a href="logowanie.html"><input type="submit" value="Masz już konto?" class="guzik1" id="napisguzik1"></a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </div>
+<script>
+    function logowanie() {
+        var form = document.getElementById("forumRejes");
+        form.classList.add("show-error");
+    }
+</script>
+</body>
+
+</html>
